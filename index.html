@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="utf-8">
+<title></title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="">
+    <style>
+        body{
+            width: 500px;
+            height: 500px;
+            margin: auto;
+        }
+        table, th, td {
+  border: 1px solid black;
+}
+        td{
+            width: 50;
+            height: 50;
+            
+        }
+        tbody tr:nth-child(odd){
+  background-color: #e8e6e6;
+  color: black;
+}
+        
+                tbody td:nth-child(1){
+  background-color: #e8e6e6;
+  color: black;
+}
+        #userEnter{display:none; width: 100%; height: 100%; background-color: #00000087; position: absolute;
+  top: 0;
+  left: 0;}
+        
+        .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+            left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+              -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+        
+                
+    </style>
+</head>
+<body onload="Preread()">
+    <!--<table>
+<table>
+        
+        
+        
+        
+        
+        <tr>
+            <td>日期</td>
+            <td>Aron</td>
+            <td>Yuan</td>
+            <td>Harry</td>
+            
+            
+        </tr>
+            <tr><td>Nov/22</td><td  onclick="show(this);" id = "aron1">?</td><td id = "yuan1">?</td><td id = "harry1">?</td></tr>
+            <tr><td>Nov/23</td><td id = "aron2">?</td><td id = "yuan2">?</td><td id = "harry2">?</td></tr>
+            <tr><td>Nov/24</td><td id = "aron3">?</td><td id = "yuan3">?</td><td id = "harry3">?</td></tr>
+            <tr><td>Nov/25</td><td id = "aron4">?</td><td id = "yuan4">?</td><td id = "harry4">?</td></tr>
+            <tr><td>Nov/26</td><td id = "aron5">?</td><td id = "yuan5">?</td><td id = "harry5">?</td></tr>
+            <tr><td>Nov/29</td><td id = "aron6">?</td><td id = "yuan6">?</td><td id = "harry6">?</td></tr>
+            <tr><td>Nov/30</td><td id = "aron7">?</td><td id = "yuan7">?</td><td id = "harry7">?</td></tr>
+            <tr><td>Dec/1</td><td id = "aron8">?</td><td id = "yuan8">?</td><td id = "harry8">?</td></tr>
+            <tr><td>Dec/2</td><td id = "aron9">?</td><td id = "yuan9">?</td><td id = "harry9">?</td></tr>
+            <tr><td>Dec/3</td><td id = "aron10">?</td><td id = "yuan10">?</td><td id = "harry10">?</td></tr>
+            <tr><td>Dec/4</td><td id = "aron11">?</td><td id = "yuan11">?</td><td id = "harry11">?</td></tr>
+        
+    </table>
+    </table>-->
+    
+    <table>
+        
+        
+        
+        
+        
+        <tr>
+            <td>日期</td>
+            <td>Aron</td>
+            <td>Yuan</td>
+            <td>Harry</td>
+            
+            
+        </tr>
+            <tr><td>Nov/22</td><td  onclick="show(this);" id = "aron1">?</td><td onclick="show(this);" id = "yuan1">?</td><td onclick="show(this);" id = "harry1">?</td></tr>
+            <tr><td>Nov/23</td><td onclick="show(this);" id = "aron2">?</td><td onclick="show(this);" id = "yuan2">?</td><td onclick="show(this);" id = "harry2">?</td></tr>
+            <tr><td>Nov/24</td><td onclick="show(this);" id = "aron3">?</td><td onclick="show(this);" id = "yuan3">?</td><td onclick="show(this);" id = "harry3">?</td></tr>
+            <tr><td>Nov/25</td><td onclick="show(this);" id = "aron4">?</td><td onclick="show(this);" id = "yuan4">?</td><td onclick="show(this);" id = "harry4">?</td></tr>
+            <tr><td>Nov/26</td><td onclick="show(this);" id = "aron5">?</td><td onclick="show(this);" id = "yuan5">?</td><td onclick="show(this);" id = "harry5">?</td></tr>
+            <tr><td>Nov/29</td><td onclick="show(this);" id = "aron6">?</td><td onclick="show(this);" id = "yuan6">?</td><td onclick="show(this);" id = "harry6">?</td></tr>
+            <tr><td>Nov/30</td><td onclick="show(this);" id = "aron7">?</td><td onclick="show(this);" id = "yuan7">?</td><td onclick="show(this);" id = "harry7">?</td></tr>
+            <tr><td>Dec/1</td><td onclick="show(this);" id = "aron8">?</td><td onclick="show(this);" id = "yuan8">?</td><td onclick="show(this);" id = "harry8">?</td></tr>
+            <tr><td>Dec/2</td><td onclick="show(this);" id = "aron9">?</td><td onclick="show(this);" id = "yuan9">?</td><td onclick="show(this);" id = "harry9">?</td></tr>
+            <tr><td>Dec/3</td><td onclick="show(this);" id = "aron10">?</td><td onclick="show(this);" id = "yuan10">?</td><td onclick="show(this);" id = "harry10">?</td></tr>
+            <tr><td>Dec/4</td><td onclick="show(this);" id = "aron11">?</td><td onclick="show(this);" id = "yuan11">?</td><td onclick="show(this);" id = "harry11">?</td></tr>
+        
+    </table>
+    
+    <div id = "userEnter">
+        <div class="vertical-center">
+            <input type="text" id ="userInput">
+            <br>
+            <button  onclick="hide()">Done</button>
+        </div>
+        
+    </div>
+    
+
+<!-- SCRIPTS -->
+<script>
+    var clickedId;
+    var clickedIdName;
+    var clickedIdNumber;
+    
+function show(x){
+    document.getElementById("userEnter").style.display="block";
+    clickedId =x.id;
+    
+    clickedIdName = x.id.replace(/[0-9]/g, '');
+    clickedIdNumber = x.id.replace(/[a-zA-Z]/g, '');
+    console.log(clickedIdNumber);
+}
+    
+    function hide(){
+    document.getElementById("userEnter").style.display="none";
+    document.getElementById("userInput");
+        
+}
+
+    
+    
+    
+    
+    
+function Preread(){
+    var file;
+    var myArray;
+var fileUrl = 'file/yuan.txt' // provide file location
+
+fetch(fileUrl)
+    .then(response => response.text())
+   .then(data => {
+        file=data;
+        myArray = data.split(" ");
+    for (let i = 0; i < myArray.length; i++) {
+        
+        document.getElementById('yuan'+(i+1)).innerHTML=myArray[i];
+        }
+    
+    
+});
+    fileUrl = 'file/aron.txt' // provide file location
+    fetch(fileUrl)
+    .then(response => response.text())
+   .then(data => {
+        file=data;
+        myArray = data.split(" ");
+    for (let i = 0; i < myArray.length; i++) {
+        
+        document.getElementById('aron'+(i+1)).innerHTML=myArray[i];
+        }
+    
+    
+});
+    fileUrl = 'file/harry.txt' // provide file location
+    fetch(fileUrl)
+    .then(response => response.text())
+   .then(data => {
+        file=data;
+        myArray = data.split(" ");
+    for (let i = 0; i < myArray.length; i++) {
+        
+        document.getElementById('harry'+(i+1)).innerHTML=myArray[i];
+        }
+    
+    
+});
+}
+    
+    
+</script>
+</body>
+</html>
